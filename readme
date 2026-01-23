@@ -1,0 +1,24 @@
+server/
+ ├── config/
+ │    └── db.js              
+ ├── controllers/
+ │    └── authController.js  
+ ├── middleware/
+ │    └── authMiddleware.js  
+ ├── models/
+ │    └── User.js            
+ ├── routes/
+ │    └── authRoutes.js      
+ ├── .env                    
+ └── server.js               
+
+
+Api Base URL
+http://localhost:5000/api/auth
+
+
+| Action        | Method | Endpoint             | Description                    |
+| ------------- | ------ | -------------------- | ------------------------------ |
+| Register User | POST   | `/api/auth/register` | Creates a new user             |
+| Login User    | POST   | `/api/auth/login`    | Authenticates & returns JWT    |
+| Get Profile   | GET    | `/api/auth/profile`  | Returns logged-in user profile |
